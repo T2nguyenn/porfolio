@@ -23,7 +23,7 @@ nav{
     justify-content: space-between;
 }
 
-.Logo{
+.logo{
     width: 100px;
     cursor: pointer;
 }
@@ -138,7 +138,7 @@ span{
     h1,p{
         font-size: 15px;
     }
-    .Logo{
+    .logo{
         font-size: 2em;
     }
 }
