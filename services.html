@@ -3,43 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Personle Portfolio Website</title>
+    <!-- META DESCRIPTION-->
+    <meta name="description" content="Dinh Nguyen don't know how to eat green onion">
+    <!-- META KEYWORD-->
+    <meta name="keywords" contet="HTML, CSS, SAINT PAUL COLLEGE HTML, T2 TEAM, WEB DEVELOPMENT">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+    <link rel="shortcut icon" type="images/ico" href="images/favicon.ico"/>
+    <!--<link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">-->
+    <meta name="author" content="Dinh Nguyen">
+    <meta name="robots" content="index, nofollow">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="hero">
-                <nav>
-                    <img src="images/logo.png" class="logo">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="services.html">SERVICES</a></li>
-                        <li><a href="hireme.html">HIRE ME</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
+    <nav>
+        <img src="images/logo.png" alt="logo pages" class="logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="hireme.html">HIRE ME</a></li>
+        </ul>
+    </nav>
 <main>
     <h3> Need Services?</h3>
         <div>
-            <lable>Type Your Full Name</lable>
-            <imput type="text" placeholder="Your name?"/>
+            <ul>
+                <li><lable>Type Your Full Name</lable></li>
+                <input type="text" placeholder="Your Name?"/>
+                <li><lable>May I help you?</lable></li>
+                <input type="text" placeholder="Your Question?"/>
+                <li><a href="mailto:trim6065@gmail.com">Mail me!</a> If you want to keep your secret.</li>
+                <!--fake button Sent-->
+                <input type="button" value="Sent" onClick="window.location.reload(true)"></input>
+            </ul>
         </div>
-
     <div>
-        <lable>May I help you?</lable>
-        <input type="text" placeholder="Your Question?"/>
-        <p>Mail Me!<a href="mailto:trim6065@gmail.com"><i class="fas fa-at"></i></a>
-        </p>
+        <img src="images/background.png" alt="background" class="background">
     </div>
+    <div class="container">
+        <div class="post">
+            <div class="text">Thanks for rating me!</div>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fa fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fa fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fa fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fa fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fa fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit">POST</button>
+                </div>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        btn.onclick = ()=>{
+            widget.style.display = "none";
+            post.style.display = "block";
+            return false;
+        }
+    </script>
 </main>
 <footer>
     <small>&copy; Dinh Nguyen</small>   
